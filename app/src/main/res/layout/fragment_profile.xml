@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myProfilePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/userNameStatusBarProfilePageTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:text="My Profile"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/menuIconProfilePageImageView"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_menu_24"
+                app:civ_border_color="@color/purple_200"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/userNameStatusBarProfilePageTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userNameStatusBarProfilePageTextView" />
+
+
+            <TextView
+                android:id="@+id/logOutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_view_divider"
+                android:text="Logout"
+                android:textSize="20dp"
+                android:drawablePadding="5dp"
+                android:visibility="gone"
+                android:drawableStart="@drawable/baseline_logout_24"
+                app:layout_constraintEnd_toEndOf="@+id/menuIconProfilePageImageView"
+                app:layout_constraintTop_toBottomOf="@+id/menuIconProfilePageImageView" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userProfilePicPostProfilePageImageView"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="10dp"
+                app:civ_border_color="@color/purple_200"
+                app:civ_border_width="2dp"
+                app:layout_constraintStart_toStartOf="@+id/userNameStatusBarProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/userNameStatusBarProfilePageTextView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_verified_24"
+                app:layout_constraintBottom_toBottomOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintEnd_toEndOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintTop_toTopOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintVertical_bias="0.83" />
+
+            <TextView
+                android:id="@+id/postsCountProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="23dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintTop_toTopOf="@+id/userProfilePicPostProfilePageImageView" />
+
+            <TextView
+                android:id="@+id/followersCountProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/postsCountProfilePageTextView"
+                app:layout_constraintTop_toTopOf="@+id/postsCountProfilePageTextView" />
+
+            <TextView
+                android:id="@+id/followingCountProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="0"
+                app:layout_constraintStart_toEndOf="@+id/followersCountProfilePageTextView"
+                app:layout_constraintTop_toTopOf="@+id/postsCountProfilePageTextView" />
+
+            <TextView
+                android:id="@+id/postsTextProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="posts"
+                app:layout_constraintEnd_toEndOf="@+id/postsCountProfilePageTextView"
+                app:layout_constraintStart_toStartOf="@+id/postsCountProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/postsCountProfilePageTextView" />
+
+            <TextView
+                android:id="@+id/followersTextProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="followers"
+                app:layout_constraintEnd_toEndOf="@+id/followersCountProfilePageTextView"
+                app:layout_constraintStart_toStartOf="@+id/followersCountProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/followersCountProfilePageTextView" />
+
+            <TextView
+                android:id="@+id/followingTextProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="following"
+                app:layout_constraintEnd_toEndOf="@+id/followingCountProfilePageTextView"
+                app:layout_constraintStart_toStartOf="@+id/followingCountProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/followingCountProfilePageTextView" />
+
+
+            <TextView
+                android:id="@+id/userNameProfilePageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintTop_toBottomOf="@+id/userProfilePicPostProfilePageImageView" />
+
+            <TextView
+                android:id="@+id/userProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/userNameProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/userNameProfilePageTextView" />
+
+
+            <TextView
+                android:id="@+id/userBioProfilePageTextView"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Be the way u r, \nLive the way u like"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@+id/userNameProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/userProfession" />
+
+            <TextView
+                android:id="@+id/editProfileProfilePageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/grey_view_divider"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Edit profile"
+                android:textColor="@color/purple_200"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/userBioProfilePageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/userBioProfilePageTextView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/userProfilePicPostProfilePageImageView"
+                app:layout_constraintTop_toBottomOf="@+id/editProfileProfilePageTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

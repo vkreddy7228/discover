@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199852616016",
+    "project_id": "discover-ac946",
+    "storage_bucket": "discover-ac946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199852616016:android:9c31f6fb8d69f87e7b2455",
+        "android_client_info": {
+          "package_name": "com.example.discover"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApBlp1H6AU9_1VMLi611hV5g4NHWBNYZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

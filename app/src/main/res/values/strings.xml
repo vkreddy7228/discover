@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Discover</string>
+    <string name="home">Home</string>
+    <string name="searchBottomNavigation">Search</string>
+    <string name="plusBottomNavigation">Post</string>
+    <string name="profileBottomNavigation">Notifications</string>
+    <string name="title_dashboard">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home Fragment</string>
+    <string name="search_fragment">Search Fragment</string>
+    <string name="post_fragment">Post Fragment</string>
+    <string name="notifications_fragment">Notifications Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="categories">
+        <item>General</item>
+        <item>Movies</item>
+        <item>Songs</item>
+        <item>Motivation</item>
+        <item>Food</item>
+        <item>Love</item>
+        <item>Education</item>
+        <item>News</item>
+        <item>Memes</item>
+        <item>Vlogs</item>
+        <item>CurrentAffairs</item>
+        <item>Nature</item>
+        <item>Business</item>
+        <item>Politics</item>
+        <item>Climate</item>
+    </string-array>
+
+    <string-array name="homeCategories">
+        <item>All</item>
+        <item>General</item>
+        <item>Movies</item>
+        <item>Food</item>
+        <item>Songs</item>
+        <item>Motivation</item>
+        <item>Love</item>
+        <item>Education</item>
+        <item>News</item>
+        <item>Memes</item>
+        <item>Vlogs</item>
+        <item>CurrentAffairs</item>
+        <item>Nature</item>
+        <item>Business</item>
+        <item>Politics</item>
+        <item>Climate</item>
+    </string-array>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/followersUserProfileFollowersPageImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/add_profile_place_holder"
+        app:civ_border_color="@color/purple_200"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/followersUserNameFollowersPageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Vamsi Krishna"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/followersUserProfessionFollowersPageTextView"
+        app:layout_constraintStart_toEndOf="@+id/followersUserProfileFollowersPageImageView"
+        app:layout_constraintTop_toTopOf="@+id/followersUserProfileFollowersPageImageView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/followersUserProfessionFollowersPageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student"
+        app:layout_constraintBottom_toBottomOf="@id/followersUserProfileFollowersPageImageView"
+        app:layout_constraintStart_toStartOf="@id/followersUserNameFollowersPageTextView"
+        app:layout_constraintTop_toBottomOf="@id/followersUserNameFollowersPageTextView" />
+
+    <Button
+        android:id="@+id/followersFollowButtonFollowersPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="5dp"
+        android:text="Follow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/followersUserProfileFollowersPageImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/followersUserProfileFollowersPageImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
